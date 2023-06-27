@@ -26,7 +26,7 @@ router.route('/todos').post((req, res) => {
 		const {title, time, description, completed} = req.body;
 		var todos = new todosModel({title, time, description, completed});
 		todos.save(err => {
-			err ? res.send(err) : res.json({message: 'To-do criado!'});
+			err ? res.send(err) : res.json({message: 'Tarefa criada!'});
 		});	
 	} else{
 		res.json({error: "Body esta vazio em alguma dessas chaves requisitadas. Chaves requisitadas: Title, Time, Description, Completed."});
@@ -51,13 +51,13 @@ router.route('/todos/:todoID').put((req, res) => {
 		todo.completed = completed;
 		
 		todo.save(err => {
-			err ? res.send(err) : res.json({message: 'To-do atualizado!'});
+			err ? res.send(err) : res.json({message: 'Tarefa atualizada!'});
 		});
 	});
 })
 .delete((req,res) => {
 	todosModel.remove({_id:req.params.todoID}, (err, todo) => {
-		err ? res.send(err) : res.json({message: 'To-do excluido com sucesso!'});
+		err ? res.send(err) : res.json({message: 'Tarefa excluida com sucesso!'});
 	})
 });
 
