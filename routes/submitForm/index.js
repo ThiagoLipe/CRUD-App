@@ -43,7 +43,7 @@ class SubmitForm extends Component{
     return {
       title: navigation.getParam("title"),
       headerStyle: {
-        backgroundColor: '#004E64'
+        backgroundColor: '#094725'
       },
       headerTintColor: '#fff'
     };
@@ -146,7 +146,7 @@ class SubmitForm extends Component{
         </FieldContainer>
 
 				<FieldContainer>
-          {id === '' || id === undefined ? null : <ActionButton color={{backgroundColor: "#EF233C"}} title="Delete" onPressAction={this.deleteTodo}/>}
+          {id === '' || id === undefined ? null : <ActionButton color={{backgroundColor: "#EF233C"}} title="Excluir" onPressAction={this.deleteTodo}/>}
           <ActionButton color={{backgroundColor: "#58B759"}} title="Enviar" onPressAction={this.submitTodo}/>
         </FieldContainer>
 
