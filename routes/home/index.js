@@ -47,9 +47,9 @@ class Home extends Component {
       </TouchableOpacity>
     );
     return {
-      title: 'CRUD App',
+      title: 'App Tarefas',
       headerStyle: {
-        backgroundColor: '#004E64',
+        backgroundColor: '#094725',
         height: 75
       },
       headerTintColor: '#fff',

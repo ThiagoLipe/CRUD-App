@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
 		marginTop: 20
   },
   selectedButton: {
-		backgroundColor: '#004E64', 
+		backgroundColor: '#094725', 
 		borderColor: '#fff', 
 		borderStyle: 'solid', 
 		borderWidth: 1
